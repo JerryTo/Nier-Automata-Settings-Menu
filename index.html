@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Nier Automata: Settings</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser.</p>
+        <![endif]-->
+
+        <header><h1>SETTINGS</h1></header>
+
+        <div id="leftColumn">
+            <ul class="fullListItem">
+                <li id="optionLanguage">Language</li>
+                <li id="optionGame">Game</li>
+                <li id="optionCamera">Camera</li>
+                <li id="optionScreen">Screen</li>
+                <li id="optionSound">Sound</li>
+                <li id="optionOther">Other</li>
+            </ul>
+        </div>
+        <div id="middle">
+            <div id="settingsLanguage" class="fadeIn hidden">
+                <ul class="fullListItem">
+                    <li id="languageVoices">
+                        <span>Voices</span>
+                        <span class="floatRight">English</span>
+                    </li>
+                    <li id="languageText">
+                        <span>Text</span>
+                        <span class="floatRight">English</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="settingsGame" class="fadeIn hidden">
+                <ul class="fullListItem">
+                    <li id="gameDifficulty">
+                        <span>Difficulty</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="gamePartnerStyle">
+                        <span>Partner NPC Combat Style</span>
+                        <span class="floatRight">Balanced</span>
+                    </li>
+                    <li id="gameMapRotation">
+                        <span>Mini-map Rotation</span>
+                        <span class="floatRight">On</span>
+                    </li>
+                    <li id="gameVibration">
+                        <span>Vibration</span>
+                        <span id="vibrationAnswer" class="floatRight">On</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="settingsCamera" class="fadeIn hidden scrollable">
+                <ul class="fullListItem">
+                    <li id="cameraHorizontalOrientation">
+                        <span>Horizontal Orientation</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="cameraVerticalOrientation">
+                        <span>Vertical Orientation</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="cameraHorizontalRotationSpeed" class="slider">
+                        <span>Horizontal Rotation Speed</span>
+                        <span id="horizontalRotationSpeedAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraVerticalRotationSpeed" class="slider">
+                        <span>Vertical Rotation Speed</span>
+                        <span id="verticalRotationSpeedAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraDistanceStandard" class="slider">
+                        <span>Distance (Standard)</span>
+                        <span id="distanceStandardAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraDistanceCombat" class="slider">
+                        <span>Distance (Combat)</span>
+                        <span id="distanceCombatAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraZoomSpeed" class="slider">
+                        <span>Zoom Speed</span>
+                        <span id="zoomSpeedAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraVerticalAutoAdjust" class="slider">
+                        <span>Vertical Auto Adjust</span>
+                        <span id="verticalAutoAdjustAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraHorizontalAutoAdjust" class="slider">
+                        <span>Horizontal Auto Adjust</span>
+                        <span id="horizontalAutoAdjustAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraFreeEnemyTracking" class="slider">
+                        <span>Free Enemy Tracking</span>
+                        <span id="freeEnemyTrackingAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraPursuitSpeed" class="slider">
+                        <span>Pursuit Speed</span>
+                        <span id="pursuitSpeedAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraLockedEnemyTracking" class="slider">
+                        <span>Locked Enemy Tracking</span>
+                        <span id="lockedEnemyTrackingAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="cameraHorizontalMapControls">
+                        <span>Horizontal Map Controls</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="cameraVerticalMapControls">
+                        <span>Vertical Map Controls</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="cameraMapControls">
+                        <span>Left Stick Map Controls</span>
+                        <span class="floatRight">Normal</span>
+                    </li>
+                    <li id="cameraRestoreDefaults">
+                        <span>Restore Defaults</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="settingsScreen" class="fadeIn hidden">
+                <ul class="fullListItem">
+                    <li id="screenBrightness" class="slider">
+                        <span>Screen Brightness</span>
+                        <span id="brightnessAnswer" class="floatRight">||||||||</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="settingsSound" class="fadeIn hidden">
+                <ul class="fullListItem">
+                    <li id="soundMusicVolume" class="slider">
+                        <span>Music Volume</span>
+                        <span id="musVolAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="soundEffectVolume" class="slider">
+                        <span>Sound Effect Volume</span>
+                        <span id="sfxVolAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="soundVoiceVolume" class="slider">
+                        <span>Voice Volume</span>
+                        <span id="voiceVolAnswer" class="floatRight">||||||||</span>
+                    </li>
+                    <li id="soundAudioOutput">
+                        <span>Audio Output</span>
+                        <span id="audioAnswer" class="floatRight">Auto (Stereo)</span>
+                    </li>
+                </ul>
+            </div>
+            <div id="settingsOther" class="fadeIn hidden">
+                <ul class="fullListItem">
+                    <li id="otherRestoreDefaults">
+                        <span>Restore Defaults</span>
+                        <span class="floatRight"></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div id="right" class="fadeIn hidden">
+            <div id="settingsOnOff" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="settingsOn">On</li>
+                    <li id="settingsOff">Off</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="settingsNormalInverted" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="cameraNormal">Normal</li>
+                    <li id="cameraInverted">Inverted</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="voices" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="voicesJapanese">Japanese</li>
+                    <li id="voicesEnglish">English</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="text" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="textJapanese">日本語</li>
+                    <li id="textEnglish">English</li>
+                    <li id="textFrench">Français</li>
+                    <li id="textItalian">Italiano</li>
+                    <li id="textGerman">Deutsch</li>
+                    <li id="textSpanish">Español</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="difficulty" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="gameDifficultyEasy">Easy</li>
+                    <li id="gameDifficultyNormal">Normal</li>
+                    <li id="gameDifficultyHard">Hard</li>
+                    <li id="gameDifficultyVeryHard">Very Hard</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="partner" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="partnerBalanced">Balanced</li>
+                    <li id="partnerClose">Close-range</li>
+                    <li id="partnerLong">Long-range</li>
+                    <li id="partnerAggressive">Aggressive</li>
+                    <li id="partnerCautious">Cautious</li>
+                    <li id="partnerPassive">Passive</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+            <div id="audio" class="fadeIn hidden">
+                <div class="rightListTopBottom"></div>
+                <ul>
+                    <li id="audioAuto">Auto (Stereo)</li>
+                    <li id="audioStereo">Stereo</li>
+                    <li id="audioMonaural">Monaural</li>
+                </ul>
+                <div class="rightListTopBottom"></div>
+            </div>
+        </div>
+        <div id="footerText" class="footer"><span id="footerHelpText" class="fadeIn"></span></div>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
